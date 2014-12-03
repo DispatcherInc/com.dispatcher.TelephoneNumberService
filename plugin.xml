@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="com.dispatcher.TelephoneNumberService" version="0.0.1">
+    <name>TelephoneNumberService</name>
+    <description>Dispatcher TelephoneNumberService</description>
+    <license>See docs</license>
+    <keywords>dispatcher</keywords>
+    <platform name="android">
+        <config-file target="config.xml" parent="/*">
+            <js-module src="src/android/TelephoneNumberService.js" name="AndroidTelephoneNumberService">
+                <clobbers target="AndroidTelephoneNumberService" />
+            </js-module>
+            <feature name="TelephoneNumberService">
+                <param name="android-package" value="com.dispatcher.TelephoneNumberService"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/com/dispatcher/TelephoneNumberService.java" target-dir="src/com/dispatcher"  />
+    </platform>
+</plugin>

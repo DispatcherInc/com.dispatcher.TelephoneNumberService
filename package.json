@@ -1,0 +1,14 @@
+{
+    "version": "0.0.1",
+    "name": "com.dispatcher.TelephoneNumberService",
+    "cordova_name": "TelephoneNumberService",
+    "description": "Dispatcher TelephoneNumberService",
+    "license": "See docs",
+    "keywords": [
+        "dispatcher"
+    ],
+    "platforms": [
+        "android"
+    ],
+    "engines": []
+}
